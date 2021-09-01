@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration from</title>
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(85, 85, 85);
+        }
+        .main{
+            width: 500px;
+            background-color: rgb(238, 238, 238);
+            margin: 20px auto;
+            border-radius: 5px;
+            border: 5px solid rgb(255, 255, 255);
+            box-shadow: 0 0 10px rgb(15, 15, 15);
+
+        }
+       header{
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background: linear-gradient(rgb(25, 25, 112) #4169e1);
+            color:blue;
+            font-size: 25px;
+            text-shadow: 1px 1px 2px rgb(14, 13, 13);
+        }
+        .form-box{
+            padding: 10px 25px 20px 25px;
+        }
+        .inp{
+            font-size: 15px;
+            width: 100%;
+            padding: 12px 12px 12px 50px;
+            border: none;
+            box-shadow: 0 0 2px 1px #444;
+        }
+        .inp:focus{
+            outline: none;
+            box-shadow: 0 0 5px 1px #4169e1;
+            color: #191970;
+            font-weight: bold;
+        }
+        label{
+            font-size: 18px;
+            color: #191970;
+        }
+        .icon img{
+            position: absolute;
+            width: 45px;
+            height: 41px;
+            padding: 5px;
+            background-color: #eee;
+            border-right: 1px solid #888;
+            border-bottom-left-radius: 2px;
+            border-top-left-radius: 2px;
+        }
+        .inp-row{
+            margin: 5px 0 10px 0;
+        }
+        .sub-btn{
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background: linear-gradient(#dc143c,#b22222);
+            cursor: pointer;
+            color: #fff;
+            border: none;
+        }
+        .sub-btn:hover{
+            background: linear-gradient(#b22222,#dc143c);
+        }
+        .sub-btn:focus{
+            outline: none;
+        }
+        .social{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .social h3{
+            text-align: center;
+            color: #444;
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        .sc-icon img{
+            width: 30px;
+            height: 30px;
+            margin: 0 15px 0 0;
+            float: left;
+        }
+        .fb-icon{
+            background-color: #3b5998;
+            border-radius: 3px;
+            color: #fff;
+            float: left;
+            padding: 10px 40px 10px 20px;
+        }
+        .gl-icon{
+            background-color: #dd4b39;
+            border-radius: 3px;
+            color: #fff;
+            float: right;
+            padding: 10px 40px 10px 20px;
+        }
+        .sc-icon a{
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            width: 50%;
+            float: left;
+            line-height: 2;
+
+        }
+        .sc-icon a:hover{
+            opacity: o.9;
+        }
+        .path{
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <img src="" alt="">
+        <h1></h1>
+
+    </header>
+       <!-- header section end -->
+
+    <!-- main section start -->
+    <main>
+        <section>
+            <div class="main">
+                <header>Registration With Us For Free!</header>
+                <form action="#" method="POST" class="form-box">
+                    <label for="username">Your Username</label>
+                    <div class="inp-row">
+                        <div class="icon"><img src="image/username.png"></div>
+                        <input type="text" name="username" class="inp" placeholder="username" required>
+                    </div>
+                    <label for="email">Your Email</label>
+                    <div class="inp-row">
+                        <div class="icon"><img src="image/email.png"></div>
+                        <input type="email" name="email" class="inp" placeholder="user_email" required>
+                    </div>
+                    <label for="Password">Your Password</label>
+                    <div class="inp-row">
+                        <div class="icon"><img src="image/password.png"></div>
+                        <input type="password" name="pass" class="inp" placeholder="user_pass" required>
+                    </div>
+                    <label for="repass">Confirm Your Password</label>
+                    <div class="inp-row">
+                        <div class="icon"><img src="image/password.png"></div>
+                        <input type="password" name="repass" class="inp" placeholder="confirm_user_pass" required>
+                        <div class="inp-row">
+                            <input type="checkbox"  class="agree"><label for="agree">I agree with the terms & condition</label>
+                    </div>
+                    <input type="submit"  class="sub-btn" value="Sign up">
+                    <div class="social">
+                        <h3>Or registration with</h3>
+                        <div class="sc-icon">
+                            <a href="#">
+                                <div class="fb-icon"><img src="image/facebook.png"> facebook</div>
+                            </a>
+                            <a href="#">
+                                <div class="gl-icon"><img src="image/google.png"> google</div>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+                <div class="path"></div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- main section end -->
+    <!-- footer section start -->
+    <footer>
+        <p>&copy; See u not for maind</p>
+
+    </footer>
+    <!-- footer section end -->
+    
+</body>
+</html>
